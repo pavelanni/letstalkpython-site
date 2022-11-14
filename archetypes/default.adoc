@@ -1,0 +1,17 @@
+--- 
+title: "{{ replace .Name "-" " " | title }}" 
+date: {{ .Date }} //
+draft: true
+
+categories:
+    - "projects"
+    - "tips"
+tags:
+    - "beginner"
+    - "intermediate"
+    - "advanced"
+---
+
+= {{ replace .Name "-" " " | title }}
+
+{{ .Site.Author.name }} {{ with .Site.Author.email }}<{{ . }}>{{ end }} 
