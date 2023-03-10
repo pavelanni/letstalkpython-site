@@ -1,0 +1,68 @@
+= Ideas for the future posts on this site
+
+Here I collect random ideas for the book companion site.
+
+== Editors
+
+We started with Mu Code and helped a us lot!
+We didn't have to worry about Python installation, different versions, packages and modules.
+It gave us a great pre-configured environment for our first web application.
+But if we want to continue working with Python we have to learn how to use other editors.
+We also have to learn how to install Python and how to use additional Python packages.
+We have already used Flask for our web application, but we didn't even notice that--it was
+installed for us by Mu Editor.
+
+=== VS Code
+
+This is one of the most popular editors for programmers.
+It's free, it supports many programming languages, it has a lot of _extensions_ to support additional features like color themes, for example.
+You can use VS Code to write other texts, not only programs.
+For example, this book and this site were written completely in VS Code.
+
+VS Code is developed by Microsoft and is available on several operating systems: Windows, macOS, Linux.
+It is also available for different processor architectures: x86, x64, Arm32, Arm64, Apple silicon.
+(If you don't know what it means, don't worry.
+Ask your older brother or sister or your parents and they'll help you to download the right version for your computer.)
+You can download it for free (no registration needed) from this site: https://code.visualstudio.com/download.
+
+After you downloaded it onto your computer you'll have to install it.
+Again, if you don't know how to do it, ask for help somebody at home or at school.
+
+You can also use VS Code online, without installing it on your computer.
+Open this site: https://vscode.dev/ and you'll be able to work with your files and programs without installing VS Code.
+
+
+== Python Packages
+
+Remember when we had to add lines like `import json` or `import os` in the beginning of our scripts?
+This was the way to tell Python that we are going to use functions from those packages.
+For example, to load orders from a JSON file we used a function called `json.load()`.
+
+Note that to use that function we had to call the package first and then the function name.
+The package is called `json`, and the function is called `load()`.
+So we called the function like this: `json.load()`.
+
+=== Installing packages
+
+The packages I mentioned above are included in Python installation.
+Which means where you have Python installed you already have those packages (and many others).
+They are part of Python's _standard library_.
+
+But in addition to them there are many packages developed by various people in the world for many different tasks.
+For example, the package `flask` is used to create web applications.
+Flask is not included in the standard library so we have to _install_ it before using.
+When we used Mu Editor it was installed with the editor.
+But if we use other editors we have to install the package `flask` ourselves.
+
+To install Python packages we usually use the command called `pip` which stands for "Pip Installs Packages."
+(Programmers call this a "recursive acronym" which means that the acronym meaning contains the acronym itself.
+Yes, they like to joke like this.)
+This `pip` command is part of the standard Python installation, but to use it you'll need to use the terminal (sometimes called "console").
+Terminal applications are different on different operating systems, but if you use VS Code it will look the same.
+Let's use VS Code for that--so instead of explaining how to do it in three different OSes, I'll explain it only once.
+
+
+
+== Getting to the cloud
+
+What
