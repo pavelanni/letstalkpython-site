@@ -57,12 +57,49 @@ But if we use other editors we have to install the package `flask` ourselves.
 To install Python packages we usually use the command called `pip` which stands for "Pip Installs Packages."
 (Programmers call this a "recursive acronym" which means that the acronym meaning contains the acronym itself.
 Yes, they like to joke like this.)
-This `pip` command is part of the standard Python installation, but to use it you'll need to use the terminal (sometimes called "console").
+The `pip` command is a part of the standard Python installation, but to use it you'll need to use the terminal (sometimes called "console").
 Terminal applications are different on different operating systems, but if you use VS Code it will look the same.
 Let's use VS Code for that--so instead of explaining how to do it in three different OSes, I'll explain it only once.
+
+----
+pip install --user flask
+----
+
 
 
 
 == Getting to the cloud
 
-What
+Our coffeeshop application works fine, but only on the devices connected to our home network.
+Of course, we want it to be available for everybody.
+Customers can order their favorite drinks _before_ coming to the shop so we can start preparing them.
+It looks like we need to run our application on the cloud.
+
+=== Containers
+
+These days most of the applications on the cloud are running in _containers_.
+So let's learn how to convert our application into a container.
+
+What is a container, anyway? It's an isolated environment where you can run your application.
+When we run it on our main computer we have to keep in mind that we are also running other applications on it.
+Imagine you created your application using Flask version 2.2.
+You have the `flask` package installed on your computer and you are happy.
+Later you discover an interesting web application that you want to try.
+That application is developed with Flask version 1.1.
+Should you now install Flask 1.1?
+Will it work alongside Flask 2.2?
+Will it break your application?
+
+This sort of questions you have to answer every time you install a new Python package due to some application's requirements.
+This is the reason Python virtual environments exist.
+We discussed them in a separate post.
+
+Another way to create a small isolated environment is to create a container.
+It's more general way of isolating processes and files that works not only for Python.
+Containers are used everywhere these days.
+
+NOTE: Often containers are called "Docker containers" because Docker, Inc. popularized them several years ago.
+Originally `docker` was the command you would use to create and run containers.
+Now there are many other tools that can create and run containers, so we prefer to call them just "containers" without adding the word "Docker."
+
+
